@@ -1,24 +1,24 @@
 const calcular_raices=(Valora,Valorb,Valorc)=>{
     
-    const resusltado_bloque1 = math.pow(ValorB, 2) - 4 * ValorA * ValorC
+    const bloque1 = Math.pow(Valorb, 2) - 4 * Valora * Valorc
 
-    const resultado_mas = -ValorB + math.sqrt(resutlado_bloque1)
-    const resultado_menos = -ValorB - math.sqrt(resutlado_bloque1)
+    const resultado_mas = -Valorb + Math.sqrt(bloque1)
+    const resultado_menos = -Valorb - Math.sqrt(bloque1)
     
-    const resultado1 = resultado_mas / (2*ValorA)
-    const resultado2 = resultado_menos / (2*ValorA)
-    return `resultado 1=${resultado1}resultado 2=${resultado2}`
+    const resultado1 = resultado_mas / (2*Valora)
+    const resultado2 = resultado_menos / (2*Valora)
+    return `resultado 1=${resultado1} resultado 2=${resultado2}`
 }
 
 const mostrar_resultado=()=>{
 
-    const valorA= document.getElementById("inp_valorA").value
-    const valorB= document.getElementById("inp_valorB").value
-    const valorC= document.getElementById("inp_vgalorC").value
+    const Valora= document.getElementById("inp_valora").value
+    const Valorb= document.getElementById("inp_valorb").value
+    const Valorc= document.getElementById("inp_valorc").value
 
-    const respuesta=calcular_raices(ValorA,ValorB,ValorC)
+    const respuesta= calcular_raices(Valora,Valorb,Valorc)
 
-    document.getElementById("h_titulo").textContent = resultado
+    document.getElementById("h_titulo").textContent = respuesta
 
 }
 
