@@ -1,4 +1,4 @@
-let arreglos = ["Pyhon","JavaScript","PHP","C++","Java","Csharp","Ruby"]
+let arreglos = ["Pyhon","JavaScript","Csharp","C++","Java","PHP","Ruby"]
 
 console.log(`
 longitud= ${arreglos.length}
@@ -29,6 +29,6 @@ console.log(arreglos)
 arreglos.unshift("Kotlin")
 console.log(arreglos)
 
-arreglos.splice(1,2)
+arreglos.splice(4,2)
 console.log(arreglos)
 
