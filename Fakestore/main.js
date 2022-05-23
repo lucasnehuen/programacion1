@@ -11,7 +11,7 @@ const fakes = async() => {
         
         let col =`
         <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 20rem;">
         <img class="card-img-top img-fluid" src="${joyeria.image}" alt="Card image cap">
         <div class="card-body btn-secondary">
           <p class="card-text">${joyeria.description}</p>
