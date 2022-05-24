@@ -1,0 +1,2 @@
+import Triangulo from "./triangulo"
+

@@ -21,4 +21,4 @@ console.log(
 )
 console.log(suma/numeros.length)
 
-function promedio_rango= 
+function promedio_rango= z
