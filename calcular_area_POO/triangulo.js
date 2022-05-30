@@ -1,18 +1,13 @@
 export default class Triangulo{
+    constructor(base,altura){
 
-  mostrar = () => {
+      this.base = base
+      this.altura = altura 
+    }
 
-    const bm = parseInt(document.getElementById("inp_basemenor").value)
-    const BM = parseInt(document.getElementById("inp_basemayor").value)
-    const h = parseInt(document.getElementById("inp_altura").value)
-     
-    const suma = (bm) +(BM)
-    const resultado = suma*(h) / 2
+    calcular_area3(){
 
-    document.getElementById("h_titulo").textContent = resultado
-}
-
-
- boton = document.getElementById("btn_mostrar").addEventListener("click", mostrar)
-
-}
+      const resultado = this.base * this.altura / 2
+      return resultado
+    }
+} 

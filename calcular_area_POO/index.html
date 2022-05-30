@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-dark bg-">
+    <nav class="navbar navbar-danger bg-">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">POO</a>
         </div>
@@ -18,24 +18,28 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h4>Triangulo</h4>
+                <h4>Trapecio</h4>
+
+                <div class="mb-3">
+                    <label class="form-label" for="">bm</label>
+                    <input id="inp_basemenor" class="form-control" type="number">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="">BM</label>
+                    <input id="inp_basemayor" class="form-control" type="number">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="">altura</label>
+                    <input id="inp_altura" class="form-control" type="number">
+                </div>
     
                 <div class="col-lg-6">
-                    <div class="row">
-                        <label class="form-label" for="">bm</label>
-                        <input id="inp_basemenor" class="form-control" type="number">
-                    </div>
-                    <div class="row">
-                        <label class="form-label" for="">BM</label>
-                        <input id="inp_basemayor" class="form-control" type="number">
-                    </div>
-                    <div>
-                        <label class="form-label" for="">altura</label>
-                        <input id="inp_altura" class="form-control" type="number">
-                    </div>
-    
+                    <h4 id="h_titulo">Resultado</h4>
                 </div>
-                <button id="btn_mostrar" class="btn btn-info">Resultado</button>
+
+                <button id="btn_mostrar" class="btn btn-info">mostrar</button>
     
             </div>
         </div>
@@ -47,45 +51,44 @@
                 <h4>Rectangulo</h4>
     
                 <div class="mb-3">
-                    <label class="form-label"> </label>
-                    <input id="inp_marca" class="form-control" type="text">
+                    <label class="form-label" for="">Altura</label>
+                    <input id="inp_altura2" class="form-control" type="number">
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label"> </label>
-                    <input id="inp_km" class="form-control" type="text">
+                    <label class="form-label" for="">Ancho</label>
+                    <input id="inp_ancho" class="form-control" type="number">
                 </div>
-    
-                <button id="btn_mostrar" class="btn btn-info">Resultado</button>
-    
+                <div class="col-lg-6">
+                    <h4 id="titulo">Resultado</h4>
+                </div>
+                <button id="btn_mostrar2" class="btn btn-info">mostrar</button>
             </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h4>Trapecio</h4>
+                <h4>Triangulo</h4>
     
                 <div class="mb-3">
-                    <label class="form-label">  </label>
-                    <input id="inp_marca" class="form-control" type="text">
+                    <label class="form-label" for="">Base</label>
+                    <input id="inp_base2" class="form-control" type="number">
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label">  </label>
-                    <input id="inp_" class="form-control" type="text">
+                    <label class="form-label" for="">Altura</label>
+                    <input id="inp_altura3" class="form-control" type="number">
                 </div>
-    
-                <button id="btn_mostrar" class="btn btn-info">Resultado</button>
-    
+                <button id="btn_mostrar3" class="btn btn-info">mostrar</button>
+                <div class="col-lg-6">
+                    <h4 id="h1_titulo">Resultado</h4>
+                </div>
             </div>
         </div>
     </div>
     
 <script src="main.js" type="module"></script>
-<script src="triangulo.js"></script>
-<script src="rectangulo.js"></script>
-<script src="trapecio.js"></script>
 </body>
 </html>
