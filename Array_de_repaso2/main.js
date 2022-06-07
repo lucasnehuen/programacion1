@@ -52,8 +52,9 @@ consolas.forEach((index,element) => {
 });
 document.getElementById('tbody').innerHTML = elementos.join('')
 }
+
 recorrer()
-document.getElementById("btn_consola").addEventListener("click", recorrer)
+document.getElementById("btn_consola").addEventListener("click", consolas)
 
 
 
