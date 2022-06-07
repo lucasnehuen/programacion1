@@ -52,9 +52,10 @@ const recorrer = () => {
         <li class="list-group-item">And a fifth one</li>
         </ul>
         `
+        criptomonedas.push(col)
         console.log(element)
     });
- document.getElementById('tbody').innerHTML = element.join('')
+ document.getElementById('tbody').innerHTML = criptomonedas.join('')
 }
 document.getElementById("btn_criptomoneda").addEventListener("click", recorrer)
 
