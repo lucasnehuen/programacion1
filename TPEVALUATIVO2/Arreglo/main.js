@@ -26,12 +26,13 @@ const mostrar = () => {
 let ultimo_elemento = criptomonedas[criptomonedas.length-1]
 
 document.getElementById('h1_posicion').textContent = `
-longitud =${criptomonedas.length};
 
-último elemento: ${ultimo_elemento};
+        longitud =${criptomonedas.length};
 
-Posicion del elemento 6 = ${criptomonedas[6]}
-`
+        último elemento: ${ultimo_elemento};
+
+        Posicion del elemento 6 = ${criptomonedas[6]}
+        `
 }
 document.getElementById("btn_mostrar").addEventListener("click",mostrar)
 
@@ -40,22 +41,15 @@ document.getElementById("btn_mostrar").addEventListener("click",mostrar)
 
 
 const recorrer = () => {
-    let element  = []
+    let items= []
     criptomonedas.forEach(element => {
     
-        let col =`
-        <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-        </ul>
-        `
-        criptomonedas.push(col)
-        console.log(element)
+        let item =`<li class="list-group-item">${element}</li>`
+        
+        items.push(item)
+        
     });
- document.getElementById('tbody').innerHTML = criptomonedas.join('')
+ document.getElementById('lista').innerHTML = items.join('')
 }
 document.getElementById("btn_criptomoneda").addEventListener("click", recorrer)
 

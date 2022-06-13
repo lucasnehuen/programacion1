@@ -10,8 +10,8 @@ const dolar = async () => {
         let col = `
         <tr>
         <td>${dolares.casa.nombre}</td>
-        <td>${dolares.casa.compra}</td>
-        <td>${dolares.casa.venta}</td>
+        <td>$${dolares.casa.compra}</td>
+        <td>$${dolares.casa.venta}</td>
     </tr>`
     
      elementos.push(col)
