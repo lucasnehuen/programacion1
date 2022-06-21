@@ -36,9 +36,9 @@ export default class Cliente{
 
     obtener_clientes()
     {
-        let lista_clientes = JSON.parse(localStorage.getItem("listado_cliente"))
+        let lista_clientes = JSON.parse(localStorage.getItem("listado_clientes"))
 
-        let filas = []
+        let filas = [] 
         lista_clientes.forEach((element,index) => {
             let fila = `
             <tr>
@@ -46,7 +46,8 @@ export default class Cliente{
                 <td>${element.apellido}</td>
                 <td>${element.dni}</td>
                 <td>
-                    <button onclick="eliminar_cliente(${index})" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                    <button onclick="almacenar_indice(${index})" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                    <button onclick="editar(${index})" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></button>
                 </td>
             </tr>`
             filas.push(fila)
@@ -58,6 +59,7 @@ export default class Cliente{
     {
       let lista_clientes = JSON.parse(localStorage.getItem("listado_clientes"))
 
+      //eliminamos cliente
       lista_clientes.splice(index,1)
 
       localStorage.setItem("listado_clientes",JSON.stringify(lista_clientes))
@@ -65,6 +67,19 @@ export default class Cliente{
       this.obtener_clientes()
     }
 
+    actualizar_cliente(index){
+        //fui a buscar el listado de clientes al storage
+        let listado_clientes = JSON.parse(localStorage.getItem("listado_clientes"))
+
+        listado_clientes[index].nombre = document.getElementById("inp_nombre").value
+        listado_clientes[index].apellido = document.getElementById("inp_apellido").value
+        listado_clientes[index].dni = document.getElementById("inp_dni").value
+
+        localStorage.setItem("listado_clientes", JSON.stringify(listado_clientes))
+
+        //volvemos a construir la tabla
+        this.obtener_clientes()
+    }
 }
 
 

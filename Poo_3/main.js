@@ -19,3 +19,19 @@ function listar(){
     cliente.obtener_clientes()
 }
 listar()
+
+function eliminar(){
+    let indice = localStorage.getItem("indice")
+    let cliente = new Cliente()
+    cliente.eliminar_cliente(indice)
+    //alert('probando')
+}
+
+document.getElementById("btn_eliminar").addEventListener("click",eliminar)
+
+function actualizar (){
+    let index = localStorage.getItem("indice_update")
+
+    let cliente = new cliente()
+    cliente.actualizar_cliente(index)
+}
