@@ -79,7 +79,10 @@ export default class Cliente{
 
         //volvemos a construir la tabla
         this.obtener_clientes()
+        this.vaciar_formulario()
+    }
+
+    vaciar_formulario(){
+        document.getElementById("form_cliente").reset()
     }
 }
-
-

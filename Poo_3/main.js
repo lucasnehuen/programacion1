@@ -30,8 +30,14 @@ function eliminar(){
 document.getElementById("btn_eliminar").addEventListener("click",eliminar)
 
 function actualizar (){
-    let index = localStorage.getItem("indice_update")
+    let cliente = new Cliente()
 
-    let cliente = new cliente()
+    const index = localStorage.getItem("indice_update")
+
     cliente.actualizar_cliente(index)
+
+    document.getElementById("btn_guardar").classList.remove("d-none")
+    document.getElementById("btn_actualizar").classList.add("d-none")
 }
+
+document.getElementById("btn_actualizar").addEventListener("click", actualizar)
