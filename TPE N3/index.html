@@ -8,7 +8,7 @@
     <title>Pedidos</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-danger">
+    <nav class="navbar navbar-dark bg-warning">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pedidos</a>
         </div>
@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-4">
 
-                <form id="form-cliente">
+                <form id="form-producto">
                   <div class="mb-3">
                       <label class="form-label">Nombre</label>
                       <input id="inp_nombre" class="form-control" type="text">
@@ -49,17 +49,39 @@
                         <head>
                             <tr>
                                 <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>Dni</th>
-                                <th>Acciones</th>
+                                <th>Descripcion</th>
+                                <th>Imagen</th>
+                                <th>Precio</th>
                             </tr>
                         </head>
                       <tbody id="tbody">
                       </tbody>
                   </table>
+                  <div class="modal" id="mymodal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Eliminacion</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>¿Ejecutar accion?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button id="btn_eliminar" type="button" class="btn btn-danger">Borrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
           </div>
          </div>
+
+         <script src="Auxiliar.js"></script>
+         <script src="bootstrap.bundle.min.js"></script>
         <script src="main.js" type="module"></script>
 
 </body>
