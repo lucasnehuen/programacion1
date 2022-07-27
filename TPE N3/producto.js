@@ -67,7 +67,7 @@ export default class Producto {
 
       localStorage.setItem("listado_productos",JSON.stringify(lista_productos))
 
-      this.obtener_productos()
+      this.obtener_productos() 
     }
 
 
