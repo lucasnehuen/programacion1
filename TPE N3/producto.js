@@ -47,7 +47,7 @@ export default class Producto {
                 <td>
                  <img class="card-img-top img-thumbnail" src="${element.imagen}" alt="Card image cap">
                 </td>
-                <td>${element.precio}</td>
+                <td>$${element.precio}</td>
                 <td>
                     <button onclick="almacenar_indice(${index})" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                     <button onclick="editar(${index})" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></button>
